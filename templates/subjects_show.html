@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学科信息</title>
+    <style>
+        #container {
+            width: 80%;
+            margin: 10px auto;
+        }
+        #main>dl>dt {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        #main>dl>dd {
+            font-size: 1.2em;
+        }
+        a {
+            text-decoration: none;
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>扣丁学堂所有学科1</h1>
+        <hr>
+        <div id="main">
+            <p v-for="subject in subjects" :key="subject.name">{{subject.name}}</p>
+            {{ subjects }}
+            <dl v-for="subject in subjects" :key="subject.name">
+                {{ subject.name }}
+                <dt>
+                    <p>no:{{ subject.no }}</p>
+                    <a :href="'/static/html/teachers.html?sno=' + subject.no">name:{{ subject.name }}</a>
+<!--                    <img v-if="subject.is_hot" src="/static/images/hot-icon-small.png">-->
+                </dt>
+                <dd>intro:{{ subject.intro }}</dd>
+            </dl>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script>
+        let app = new Vue({
+            el: '#main',
+            data: {
+                subjects: [{'no': 1, 'isHot': 'True', 'intro': '当下最热门的学科', 'name': 'Python全栈开发'}, {'no': 2, 'isHot': 'False', 'intro': '学习自动化测试的学科', 'name': '全栈软件测试'}]
+            },
+            created() {
+
+                        console.log(this.subjects)
+
+            }
+        })
+    </script>
+</body>
+</html>
