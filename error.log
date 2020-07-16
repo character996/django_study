@@ -1,0 +1,18 @@
+2020-07-15 16:33:31 ERROR [20010-Thread-6] log.log_response line 228: Internal Server Error: /teachers_data/
+Traceback (most recent call last):
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scanv/PycharmProjects/django-day15/djangotest/polls/views.py", line 152, in get_teachers_data
+    print(key + ':' + value)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2020-07-15 16:33:31 ERROR [20010-Thread-6] basehttp.log_message line 124: "GET /teachers_data/ HTTP/1.1" 500 83287
+2020-07-15 16:33:59 WARNING [20047-Thread-3] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:26 WARNING [20660-Thread-3] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:29 WARNING [20660-Thread-11] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:40 WARNING [20660-Thread-19] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:58:23 WARNING [20660-Thread-29] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 17:04:03 WARNING [20871-Thread-5] basehttp.log_message line 124: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699

@@ -1,0 +1,105 @@
+2020-07-15 15:30:36 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13848
+2020-07-15 15:30:36 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-07-15 15:30:36 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-07-15 15:30:36 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-07-15 15:30:37 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-07-15 15:30:58 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+2020-07-15 15:31:04 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13849
+2020-07-15 16:12:42 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13848
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/images/1.png HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/images/2.png HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-07-15 16:12:42 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+2020-07-15 16:12:47 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 16:12:55 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 16:18:02 basehttp.log_message: "GET /excel/ HTTP/1.1" 200 5632
+2020-07-15 16:26:15 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:26:15 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-07-15 16:26:15 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-07-15 16:26:15 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-07-15 16:26:15 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-07-15 16:26:15 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+2020-07-15 16:26:15 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 16:29:01 basehttp.log_message: "GET /excel/ HTTP/1.1" 200 5632
+2020-07-15 16:30:18 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:30:19 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 16:33:30 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:33:31 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-07-15 16:33:31 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-07-15 16:33:31 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-07-15 16:33:31 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-07-15 16:33:31 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+2020-07-15 16:33:31 log.log_response: Internal Server Error: /teachers_data/
+Traceback (most recent call last):
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/scanv/PycharmProjects/django-day15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scanv/PycharmProjects/django-day15/djangotest/polls/views.py", line 152, in get_teachers_data
+    print(key + ':' + value)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2020-07-15 16:33:31 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 500 83287
+2020-07-15 16:33:59 basehttp.log_message: "GET / HTTP/1.1" 200 11066
+2020-07-15 16:33:59 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:34:00 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 16:34:08 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10839
+2020-07-15 16:34:08 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 16:38:22 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:38:22 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 16:57:26 basehttp.log_message: "GET / HTTP/1.1" 200 11066
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-07-15 16:57:26 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+2020-07-15 16:57:29 basehttp.log_message: "GET /logout/ HTTP/1.1" 302 0
+2020-07-15 16:57:29 basehttp.log_message: "GET / HTTP/1.1" 200 11086
+2020-07-15 16:57:29 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:31 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 16:57:31 basehttp.log_message: "GET /static/images/1.png HTTP/1.1" 304 0
+2020-07-15 16:57:31 basehttp.log_message: "GET /static/images/2.png HTTP/1.1" 304 0
+2020-07-15 16:57:34 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10840
+2020-07-15 16:57:34 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 302 0
+2020-07-15 16:57:34 basehttp.log_message: "GET /login/?backurl=/teachers_data/ HTTP/1.1" 200 11667
+2020-07-15 16:57:40 basehttp.log_message: "GET / HTTP/1.1" 200 11086
+2020-07-15 16:57:40 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:57:46 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 16:57:48 basehttp.log_message: "GET /praise/?tno=1 HTTP/1.1" 200 51
+2020-07-15 16:57:53 basehttp.log_message: "GET /criticize/?tno=1 HTTP/1.1" 200 51
+2020-07-15 16:58:12 basehttp.log_message: "GET /excel/ HTTP/1.1" 302 0
+2020-07-15 16:58:12 basehttp.log_message: "GET /login/?backurl=/excel/ HTTP/1.1" 200 11667
+2020-07-15 16:58:20 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:58:20 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 302 0
+2020-07-15 16:58:20 basehttp.log_message: "GET /login/?backurl=/teachers_data/ HTTP/1.1" 200 11667
+2020-07-15 16:58:23 basehttp.log_message: "GET / HTTP/1.1" 200 11086
+2020-07-15 16:58:23 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 16:59:16 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13848
+2020-07-15 16:59:17 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 16:59:17 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 16:59:54 basehttp.log_message: "GET /excel/ HTTP/1.1" 302 0
+2020-07-15 16:59:54 basehttp.log_message: "GET /login/?backurl=/excel/ HTTP/1.1" 200 11667
+2020-07-15 16:59:57 basehttp.log_message: "GET /praise/?tno=1 HTTP/1.1" 200 51
+2020-07-15 17:00:00 basehttp.log_message: "GET /criticize/?tno=1 HTTP/1.1" 200 51
+2020-07-15 17:00:17 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13848
+2020-07-15 17:00:20 basehttp.log_message: "GET /praise/?tno=1 HTTP/1.1" 200 51
+2020-07-15 17:03:35 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13848
+2020-07-15 17:03:37 basehttp.log_message: "GET /praise/?tno=1 HTTP/1.1" 200 51
+2020-07-15 17:03:42 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10839
+2020-07-15 17:03:42 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 17:04:02 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 17:04:02 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 17:04:03 basehttp.log_message: "GET / HTTP/1.1" 200 11086
+2020-07-15 17:04:03 basehttp.log_message: "GET /static/images/hot-icon-small.png HTTP/1.1" 404 1699
+2020-07-15 17:04:06 basehttp.log_message: "GET /teachers/?sno=1 HTTP/1.1" 200 13846
+2020-07-15 17:04:10 basehttp.log_message: "GET /excel/ HTTP/1.1" 302 0
+2020-07-15 17:04:10 basehttp.log_message: "GET /login/?backurl=/excel/ HTTP/1.1" 200 11667
+2020-07-15 17:04:14 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10841
+2020-07-15 17:04:14 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
+2020-07-15 17:04:56 basehttp.log_message: "GET /teacher_data_show/ HTTP/1.1" 200 10840
+2020-07-15 17:04:56 basehttp.log_message: "GET /teachers_data/ HTTP/1.1" 200 97
