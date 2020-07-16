@@ -161,3 +161,21 @@ def teacher_data_show(request):
     # 返回显示数据的模板
     return render(request, 'teacher_data.html',)
 
+
+def show_subjects_api(request):
+    # 前后端分离，编写数据接口来传递json数据。
+    queryset = Subject.objects.all()
+    subjects = []
+    for subject in queryset:
+        subjects.append({
+            'no': subject.no,
+            'name': subject.name,
+            'intro': subject.intro,
+            'isHot': subject.is_hot
+        })
+    return JsonResponse(subjects, safe=False)
+
+
+def subjects_show(request):
+    return render(request, 'subjects_show.html',)
+

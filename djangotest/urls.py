@@ -31,6 +31,8 @@ urlpatterns = [
     path('teachers_data/', views.get_teachers_data),
     path('register/', views.register),
     path('teacher_data_show/', views.teacher_data_show),
+    path('api/subjects/', views.show_subjects_api),
+    path('subjects_show/', views.subjects_show)
 ]
 if DEBUG:
 

@@ -1,5 +1,5 @@
 # 忽略所有的日志文件
 *.log
 # 忽略所有的sqlite3文件
-.sqlite3
+*.sqlite3
 
