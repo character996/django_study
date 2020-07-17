@@ -44,8 +44,10 @@
 <body>
     <div id="container">
         <h1>{{ subject.name }}学科的老师信息</h1>
-        <span><a href="/excel/"><p>下载统计报表</p></a></span>
-        <span><a href="/teacher_data_show/"><p>显示图表信息</p></a></span>
+        {% if teachers %}
+            <span><a href="/excel/"><p>下载统计报表</p></a></span>
+            <span><a href="/teacher_data_show/"><p>显示图表信息</p></a></span>
+        {% endif %}
         <hr>
         {% if not teachers %}
             <h2>暂无该学科老师信息</h2>

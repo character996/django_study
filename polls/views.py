@@ -7,7 +7,25 @@ import xlwt
 from io import BytesIO
 from urllib.parse import quote
 import hashlib
+from rest_framework.response import Response
+from .serializers import SubjectSimpleSerializer, TeacherSerializer
+from rest_framework.decorators import api_view, renderer_classes
+from django.views.generic import TemplateView
+
+
 # Create your views here.
+
+@api_view(('GET',))
+def drf_show_teachers(request: HttpRequest) -> HttpResponse:
+    try:
+        sno = int(request.GET.get('sno'))
+        subject = Subject.objects.only('name').get(no=sno)
+        teachers = Teacher.objects.filter(subject=subject).defer('subject').order_by('no')
+        subject_seri = SubjectSimpleSerializer(subject)
+        teacher_seri = TeacherSerializer(teachers, many=True)
+        return Response({'subject': subject_seri.data, 'teachers': teacher_seri.data},)
+    except (TypeError, ValueError, Subject.DoesNotExist):
+        return Response(status=404)
 
 
 def show_subjects(request):
@@ -159,7 +177,7 @@ def get_teachers_data(request):
 
 def teacher_data_show(request):
     # 返回显示数据的模板
-    return render(request, 'teacher_data.html',)
+    return render(request, 'teacher_data.html', )
 
 
 def show_subjects_api(request):
@@ -177,5 +195,4 @@ def show_subjects_api(request):
 
 
 def subjects_show(request):
-    return render(request, 'subjects_show.html',)
-
+    return render(request, 'subjects_show.html', )
